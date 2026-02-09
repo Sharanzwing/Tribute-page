@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 80px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#title {
+  position: sticky;
+  position: -webkit-sticky; /* Safari support */
+  top: 0;
+  z-index: 100;
+  background: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold; /* font-style should be italic/normal/oblique, not bold */
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+#img-div {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+  background: white; /* Added background for the hover effect */
+}
+
+#img-div:hover {
+  transform: scale(1.05); /* Reduced from 1.1 for better UX */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Slightly lighter shadow */
+}
+
+#image {
+  max-width: 100%;
+  padding: 10px 0;
+  height: auto;
+}
+
+.content {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.content ul {
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 2;
+}
+
+.content ul li {
+  font-weight: 400; /* Changed from 100 for better readability */
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+}
+
+.copyright {
+  background: #111313;
+}
+
+.copyright .ft-devlp {
+  color: #fff;
+  font-size: 1em;
+  margin: 7px 0 10px;
+}
+
+.copyright p.ft-devlp {
+  color: #fff;
+  text-align: center;
+}
+
+.copyright p.ft-devlp a {
+  font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.copyright p.ft-devlp a:hover {
+  color: #eee;
+}
+
+footer .container-fluid.copyright p.ft-devlp #heart {
+  position: relative;
+  animation: heartbeat 1s infinite;
+  color: rgba(180, 22, 25, 1);
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(0.75); }
+  20% { transform: scale(1); }
+  40% { transform: scale(0.75); }
+  60% { transform: scale(1); }
+  80% { transform: scale(0.75); }
+  100% { transform: scale(0.75); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
